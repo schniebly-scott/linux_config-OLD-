@@ -1,11 +1,14 @@
 # Ignore everything
-*
+/*
 
 # But not these files...
 !.gitignore
 !zshrc
 !vimrc
 !xbindkeysrc
-!/polybar
-!/kitty
-!/awesome
+!/polybar/
+!/kitty/
+!/awesome/
+
+#polybar zscroll fix
+polybar/zscroll/
