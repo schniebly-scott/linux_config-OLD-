@@ -6,6 +6,6 @@
 !zshrc
 !vimrc
 !xbindkeysrc
-!polybar/
-!kitty/
-!awesome/
+!polybar/*
+!kitty/*
+!awesome/*
