@@ -8,14 +8,10 @@ This file will show how to manually install the dependencies required for my con
 
 <p>
 Packages needed before you start:
-
-zsh - ZSH Shell
-  
-zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
-  
-autojump - jump to directories with 'j' or 'jc' for child or 'jo' to open in file manager
-  
-zsh-autosuggestions - Suggestions based on your history
+* zsh - ZSH Shell
+* zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
+* autojump - jump to directories with 'j' or 'jc' for child or 'jo' to open in file manager 
+* zsh-autosuggestions - Suggestions based on your history
 
 code:
   ```sh
