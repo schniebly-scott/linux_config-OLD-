@@ -3,9 +3,9 @@ This file will show how to manually install the dependencies required for my con
 
 ##############################################################
                      <h3>zsh/p10k</h3>
-                     credit to Chris Titus
-                     https://christitus.com/zsh/
-##############################################################
+                     credit to Chris Titus<br>
+                     https://christitus.com/zsh/<br>
+##############################################################<br>
 Packages needed before you start:
 
 zsh - ZSH Shell
