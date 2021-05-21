@@ -21,6 +21,7 @@ code:
   echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
   ```
 
+Then set zsh to your default with:
   ```sh
   chsh $USER
   ```
