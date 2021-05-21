@@ -21,3 +21,8 @@ code:
   echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
   ```
 
+  ```sh
+  chsh $USER
+  ```
+Then type '/bin/zsh'
+
