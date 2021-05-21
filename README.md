@@ -9,9 +9,9 @@ This file will show how to manually install the dependencies required for my con
 
 ## Folders
 Create folders in your `$HOME` named:
-* .scripts
-* .resources
-* .themes
+* `.scripts`
+* `.resources`
+* `.themes`
 
 ## Zsh and p10k
 <h5>credit to Chris Titus</h5>
