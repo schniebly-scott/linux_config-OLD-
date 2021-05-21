@@ -6,7 +6,7 @@ This file will show how to manually install the dependencies required for my con
 <h5>credit to Chris Titus</h5>
 <h5>https://christitus.com/zsh/</h5>
 
-<p>
+
 Packages needed before you start:
 * zsh - ZSH Shell
 * zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
@@ -20,4 +20,4 @@ code:
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
   echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
   ```
-</p>
+
