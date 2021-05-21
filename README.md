@@ -24,6 +24,9 @@ Create folders in your `$HOME` named:
 **Zsh**:
 `ln -s .config/zshrc .zshrc`
 
+**Xbindkeys**
+`ln -s .config/xbindkeysrc .xbindkeysrc`
+
 ## GTK Theme
 Extract the zip into .themes:
 [EliverLara/Ant](https://github.com/EliverLara/Ant)
