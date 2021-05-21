@@ -5,8 +5,15 @@ This file will show how to manually install the dependencies required for my con
 ## Table of Contents
 
 * [Folders](#folders)
-* [Zsh/P10k](#zsh-and-p10k)
 * [Symbolic Links](#symbolic-links)
+* [Zsh/P10k](#zsh-and-p10k)
+
+
+## Folders
+Create folders in your `$HOME` named:
+* `.scripts`
+* `.resources`
+* `.themes`
 
 ## Symbolic Links
 **Vim**:
@@ -14,12 +21,6 @@ This file will show how to manually install the dependencies required for my con
 
 **Zsh**:
 `ln -s .config/zshrc .zshrc`
-
-## Folders
-Create folders in your `$HOME` named:
-* `.scripts`
-* `.resources`
-* `.themes`
 
 ## Zsh and p10k
 <h5>credit to Chris Titus</h5>
