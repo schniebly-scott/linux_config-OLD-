@@ -6,6 +6,14 @@ This file will show how to manually install the dependencies required for my con
 
 * [Folders](#folders)
 * [Zsh/P10k](#zsh-and-p10k)
+* [Symbolic Links](#symbolic-links)
+
+## Symbolic Links
+**Vim**:
+`ln -s .config/vimrc .vimrc`
+
+**Zsh**:
+`ln -s .config/zshrc .zshrc`
 
 ## Folders
 Create folders in your `$HOME` named:
@@ -19,10 +27,10 @@ Create folders in your `$HOME` named:
 
 
 Packages needed before you start:
-* zsh - ZSH Shell
-* zsh-syntax-highlighting - syntax highlighting for ZSH in standard repos
-* autojump - jump to directories with `j` or `jc` for child or `jo` to open in file manager 
-* zsh-autosuggestions - Suggestions based on your history
+* **zsh** - ZSH Shell
+* **zsh-syntax-highlighting** - syntax highlighting for ZSH in standard repos
+* **autojump** - jump to directories with `j` or `jc` for child or `jo` to open in file manager 
+* **zsh-autosuggestions** - Suggestions based on your history
 
 code:
   ```sh
