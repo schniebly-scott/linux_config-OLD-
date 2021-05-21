@@ -1,11 +1,12 @@
 <h1>README.md</h1>
 This file will show how to manually install the dependencies required for my config.
 
-##############################################################
-                     <h3>zsh/p10k</h3>
-                     credit to Chris Titus<br>
-                     https://christitus.com/zsh/<br>
-##############################################################<br>
+
+
+<h3>zsh/p10k</h3>
+<h5>credit to Chris Titus</h5>
+<h5>https://christitus.com/zsh/</h5>
+
 Packages needed before you start:
 
 zsh - ZSH Shell
