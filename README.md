@@ -5,7 +5,7 @@ This file will show how to manually install the dependencies required for my con
 ## Table of Contents
 
 * [Folders](#folders)
-* [Zsh/P10k](#zsh/p10k)
+* [Zsh/P10k](#zsh-and-p10k)
 
 ## Folders
 Create folders in your `$HOME` named:
@@ -13,7 +13,7 @@ Create folders in your `$HOME` named:
 * .resources
 * .themes
 
-## zsh/p10k
+## Zsh and p10k
 <h5>credit to Chris Titus</h5>
 <h5>https://christitus.com/zsh/</h5>
 
