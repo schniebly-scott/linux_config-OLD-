@@ -9,6 +9,7 @@
 !/polybar/
 !/kitty/
 !/awesome/
+!README.md
 
 #polybar zscroll fix
 /polybar/zscroll/
