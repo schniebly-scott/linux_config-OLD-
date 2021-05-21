@@ -26,7 +26,7 @@ Create folders in your `$HOME` named:
 
 ## GTK Theme
 Extract the zip into .themes:
-  [EliverLara/Ant]($https://github.com/EliverLara/Ant)
+[EliverLara/Ant](https://github.com/EliverLara/Ant)
 
 ## Beep
 Insert `set bell-style none` into `/etc/inputrc`
