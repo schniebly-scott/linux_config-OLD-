@@ -43,10 +43,10 @@
   control+shift + q
 
 
-"~/scripts/brightscripts/upbright.sh" 
+"~/.scripts/brightscripts/upbright.sh" 
   XF86MonBrightnessUp 
 
-"~/scripts/brightscripts/downbright.sh"
+"~/.scripts/brightscripts/downbright.sh"
   XF86MonBrightnessDown
 
 "amixer set Master 3%+"

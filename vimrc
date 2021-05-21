@@ -7,6 +7,8 @@ set hlsearch
 set ignorecase
 set showmode
 set showcmd
+set noerrorbells
+set vb t_vb=
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
