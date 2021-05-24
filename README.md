@@ -7,7 +7,6 @@ This file will show how to manually install the dependencies required for my con
 * [Folders](#folders)
 * [Symbolic Links](#symbolic-links)
 * [GTK Theme](#gtk-theme)
-* [Beep](#beep)
 * [Zsh/P10k](#zsh-and-p10k)
 
 
@@ -30,9 +29,6 @@ Create folders in your `$HOME` named:
 ## GTK Theme
 Extract the zip into .themes:
 [EliverLara/Ant](https://github.com/EliverLara/Ant)
-
-## Beep
-Insert `set bell-style none` into `/etc/inputrc`
 
 ## Zsh and p10k
 <h5>credit to Chris Titus</h5>
