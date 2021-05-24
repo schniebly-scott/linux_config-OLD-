@@ -10,6 +10,7 @@
 !/kitty/
 !/awesome/
 !README.md
+!essentials
 
 #polybar zscroll fix
 /polybar/zscroll/
