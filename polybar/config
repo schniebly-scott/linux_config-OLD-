@@ -29,10 +29,10 @@ alert = #bd2c40
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 91.5%
+width = 91%
 height = 27
-offset-x = 8.5%
-;offset-y = 1%
+offset-x = 9%
+offset-y = 0%
 radius = 0.0
 fixed-center = false
 
@@ -44,8 +44,8 @@ line-color = #000000
 
 border-size = 0
 border-color = #0d0d0d
-border-left-size = 2
-border-left-color = #a7b3d4 
+border-top-size = 0
+border-top-color = #0d0d0d 
 
 padding-left = 0
 padding-right = 2
@@ -55,7 +55,8 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=12;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = FontAwesome:size=12;0
+font-2 = "Font Awesome 5 free:size=12;0"
+
 
 modules-left = 
 modules-center = spotify-prev spotify-play-pause spotify-next spotify
@@ -69,7 +70,7 @@ modules-right = filesystem battery date
 ;wm-restack = bspwm
 ;wm-restack = i3
 
-override-redirect = false
+override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -442,7 +443,7 @@ screenchange-reload = true
 pseudo-transparency = false
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini

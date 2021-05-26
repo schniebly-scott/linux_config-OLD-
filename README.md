@@ -30,6 +30,9 @@ Create folders in your `$HOME` named:
 Extract the zip into .themes:
 [EliverLara/Ant](https://github.com/EliverLara/Ant)
 
+Here's a better link:
+[https://www.gnome-look.org/p/1099856/](https://www.gnome-look.org/p/1099856/)
+
 ## Zsh and p10k
 <h5>credit to Chris Titus</h5>
 <h5>https://christitus.com/zsh/</h5>

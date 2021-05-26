@@ -11,6 +11,7 @@
 !/awesome/
 !README.md
 !essentials
+!stalonetrayrc
 
 #polybar zscroll fix
 /polybar/zscroll/

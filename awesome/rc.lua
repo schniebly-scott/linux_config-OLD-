@@ -18,9 +18,6 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
 
--- Load Debian menu entries
-local debian = require("debian.menu")
-local has_fdo, freedesktop = pcall(require, "freedesktop")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -50,7 +47,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-
+beautiful.wallpaper = "~/pics/bg.png"
 -- This is used later as the default terminal and editor to run.
 terminal = "kitty"
 editor = os.getenv("vim") or "editor"
@@ -106,7 +103,6 @@ else
     mymainmenu = awful.menu({
         items = {
                   menu_awesome,
-                  { "Debian", debian.menu.Debian_menu.Debian },
                   menu_terminal,
                 }
     })
@@ -133,11 +129,11 @@ local function set_wallpaper(s)
 end
 
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
-screen.connect_signal("property::geometry", set_wallpaper)
+--screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
-    set_wallpaper(s)
+    --set_wallpaper(s)
 
     -- Each screen has its own tag table.
     awful.tag({ "1", "2", "3", "4", "5", "6", "7", "8", "9" }, s, awful.layout.layouts[1])
@@ -243,7 +239,7 @@ globalkeys = gears.table.join(
 
     -- Chrome
     awful.key({ modkey },            "b",     function () 
-    awful.util.spawn("google-chrome") end,
+    awful.util.spawn("google-chrome-stable") end,
               {description = "Opens chrome", group = "launcher"}),
 
     -- Menubar
@@ -415,6 +411,10 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
 
+
+	{ rule = { class = "vivaldi-stable" },
+          properties = { opacity = 1, maximized = false, floating = false }
+  	},
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { screen = 1, tag = "2" } },
@@ -495,9 +495,9 @@ awful.spawn.with_shell("pkill stalonetray")
 awful.spawn.with_shell("pkill pnmixer")
 awful.spawn.with_shell("xbindkeys")
 awful.spawn.with_shell("picom")
-awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("/home/scott/.config/polybar/launch.sh")
-awful.spawn.with_shell("strat arch nm-applet")
+awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("stalonetray")
+awful.spawn.with_shell("nitrogen --restore")
