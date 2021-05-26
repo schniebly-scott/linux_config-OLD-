@@ -3,12 +3,14 @@ filetype off                  " required
 syntax on
 set wrap
 set number
-set hlsearch
 set ignorecase
+set clipboard=unnamed
+set mouse=a
 set showmode
 set showcmd
 set noerrorbells
 set vb t_vb=
+set encoding=utf-8
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

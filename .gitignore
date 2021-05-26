@@ -11,6 +11,10 @@
 !/awesome/
 !README.md
 !essentials
+!stalonetrayrc
 
 #polybar zscroll fix
 /polybar/zscroll/
+
+#awesome themes fix
+/awesome/themes/

@@ -8,7 +8,7 @@ kitty
 polybar
 pnmixer
 blueman
-nm-applet (Arch)
+nm-applet (Arch - network-manager-applet)
 remmina
 picom
 etherwake
@@ -30,4 +30,5 @@ git
 feh
 discord
 awesome
-
+bc
+xorg-xrandr
