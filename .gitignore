@@ -12,6 +12,7 @@
 !README.md
 !essentials
 !stalonetrayrc
+!picom.conf
 
 #polybar zscroll fix
 /polybar/zscroll/
