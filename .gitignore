@@ -13,6 +13,7 @@
 !essentials
 !stalonetrayrc
 !picom.conf
+!asoundrc
 
 #polybar zscroll fix
 /polybar/zscroll/
