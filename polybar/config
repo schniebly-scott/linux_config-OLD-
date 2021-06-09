@@ -29,12 +29,12 @@ alert = #bd2c40
 
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 91%
+width = 100%
 height = 30
-offset-x = 9%
+offset-x = 0%
 offset-y = 0%
 radius = 0.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -50,7 +50,7 @@ border-top-color = #0d0d0d
 padding-left = 0
 padding-right = 2
 
-module-margin-left = 2
+module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=12;1
@@ -59,16 +59,16 @@ font-2 = "Font Awesome 5 free:size=12;0"
 font-3 = "mononoki Nerd Font:size=12:0"
 
 
-modules-left = 
+modules-left = powermenu update
 modules-center = spotify-prev spotify-play-pause spotify-next spotify
-modules-right = filesystem battery date  
+modules-right = battery date  
 
-;tray-position = right
-;tray-padding = 2
-;tray-reparent = true
+tray-position = right
+tray-padding = 2
+tray-reparent = true
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
+;wm-restack = awesome
 ;wm-restack = i3
 
 override-redirect = true
@@ -83,6 +83,13 @@ enable-ipc = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/update]
+type = custom/script
+exec = yay -Qu | wc -l
+interval = 4000
+label = %output%
+format-prefix = "    "
 
 [module/xwindow]
 type = internal/xwindow
@@ -385,17 +392,17 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
+label-open = "  "
+label-open-foreground = ${colors.foreground}
+label-close = "  cancel"
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
 menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
+menu-0-0-exec = systemctl reboot
 menu-0-1 = power off
-menu-0-1-exec = menu-open-2
+menu-0-1-exec = systemctl poweroff
 
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0

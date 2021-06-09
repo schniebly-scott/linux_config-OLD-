@@ -489,16 +489,23 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --Gaps
 beautiful.useless_gap = 5
 
+--Fix for polybar
+--
+awful.wibar {
+      position = 'top',
+      height   = 30,
+  }
+  
 --AutoStart
 --
 awful.spawn.with_shell("pkill stalonetray")
 awful.spawn.with_shell("pkill pnmixer")
 awful.spawn.with_shell("xbindkeys")
+--awful.spawn.with_shell("stalonetray")
 awful.spawn.with_shell("pulseaudio")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("/home/scott/.config/polybar/launch.sh")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("blueman-applet")
-awful.spawn.with_shell("stalonetray")
 awful.spawn.with_shell("nitrogen --restore")

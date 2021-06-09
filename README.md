@@ -26,6 +26,12 @@ Create folders in your `$HOME` named:
 **Xbindkeys**
 `ln -s .config/xbindkeysrc .xbindkeysrc`
 
+**Alsamixer**
+`ln -s .config/asoundrc .asoundrc`
+
+**Lightdm icon**
+`ln -s ~/pics/pfp.jpg .face`
+
 ## GTK Theme
 Extract the zip into .themes:
 [EliverLara/Ant](https://github.com/EliverLara/Ant)
