@@ -9,7 +9,7 @@ polybar
 pnmixer
 blueman
 nm-applet (Arch - network-manager-applet)
-remmina
+remmina (and freerdp, vncproto) 
 picom
 etherwake
 net-tools
@@ -17,7 +17,6 @@ nmap
 *brew
 *spotify
 *web browser
-FontAwesome
 asciiaquarium (brew)
 xbindkeys
 python
@@ -42,3 +41,4 @@ bleachbit
 virtualbox
 lightdm
 lightdm-webkit-theme-aether
+papirus-icon-theme

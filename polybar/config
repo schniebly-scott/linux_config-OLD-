@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #111314
+background = #3d4040
 background-alt = #111314
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
@@ -53,20 +53,20 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=12;1
+;vertical offsets are determined by the number after the ';'
+font-0 = fixed:pixelsize=12;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Font Awesome 5 free:size=12;0"
-font-3 = "mononoki Nerd Font:size=12:0"
+font-2 = "mononoki Nerd Font:size=12;1"
 
 
-modules-left = powermenu update
+modules-left = update
 modules-center = spotify-prev spotify-play-pause spotify-next spotify
-modules-right = battery date  
+modules-right =  battery date powermenu 
 
-tray-position = right
+tray-position = left
 tray-padding = 2
 tray-reparent = true
-;tray-background = #0063ff
+tray-background = ${colors.background}
 
 ;wm-restack = awesome
 ;wm-restack = i3
@@ -392,40 +392,30 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = "  "
+label-open = "  "
 label-open-foreground = ${colors.foreground}
-label-close = "  cancel"
+label-close = "  Cancel"
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-0 = reboot
+menu-0-0 = Reboot
 menu-0-0-exec = systemctl reboot
-menu-0-1 = power off
+menu-0-1 = Power Off
 menu-0-1-exec = systemctl poweroff
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [module/spotify]
 type = custom/script
 tail = true
 ; prefix symbol is shown before the text
-format-prefix = ""
+format-prefix = " "
 ;label =  %token:27:27%
 format = <label>
 exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
 
 [module/spotify-prev]
 type = custom/script
-format-font = 4
+format-font = 3
 exec = echo ""
 format = <label>
 click-left = playerctl previous spotify
@@ -439,7 +429,7 @@ click-left = playerctl play-pause spotify
 
 [module/spotify-next]
 type = custom/script
-format-font = 4
+format-font = 3
 exec = echo ""
 format = <label>
 click-left = playerctl next spotify
