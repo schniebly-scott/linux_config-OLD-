@@ -499,7 +499,6 @@ awful.wibar {
 --AutoStart
 --
 awful.spawn.with_shell("~/.scripts/timed/hourly.sh")
-awful.spawn.with_shell("pkill stalonetray")
 awful.spawn.with_shell("pkill pnmixer")
 awful.spawn.with_shell("xbindkeys")
 --awful.spawn.with_shell("stalonetray")
