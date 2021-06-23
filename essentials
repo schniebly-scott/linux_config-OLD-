@@ -10,7 +10,7 @@ pnmixer
 blueman
 nm-applet (Arch - network-manager-applet)
 remmina (and freerdp, vncproto) 
-picom
+picom-jonaburg-git
 etherwake
 net-tools
 nmap

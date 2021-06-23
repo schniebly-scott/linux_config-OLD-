@@ -39,7 +39,7 @@ fixed-center = true
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 0
+line-size = 4
 line-color = #000000
 
 border-size = 0
@@ -158,12 +158,13 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-background = #307475
+label-focused-underline = #122e2e
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
+label-unfocused-background = #122e2e
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
