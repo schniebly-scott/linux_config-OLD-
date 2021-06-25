@@ -60,7 +60,7 @@ font-2 = "mononoki Nerd Font:size=12;1"
 
 
 modules-left = update i3
-modules-center = spotify-prev spotify-play-pause spotify-next spotify
+modules-center = spotify
 modules-right =  battery date powermenu 
 
 tray-position = left
@@ -86,7 +86,7 @@ cursor-scroll = ns-resize
 
 [module/update]
 type = custom/script
-exec = yay -Qu | wc -l
+exec = cat ~/.scripts/timed/updates.txt
 interval = 4000
 label = %output%
 format-prefix = "    "
@@ -387,53 +387,42 @@ ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-
-label-open = "  "
-label-open-foreground = ${colors.foreground}
-label-close = "  Cancel"
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = Reboot
-menu-0-0-exec = systemctl reboot
-menu-0-1 = Power Off
-menu-0-1-exec = systemctl poweroff
+type = custom/script
+format-font = 3
+exec = echo "  "
+format = <label>
+click-left = ~/.config/rofi/applets/applets/powermenu.sh
 
 [module/spotify]
 type = custom/script
-tail = true
+interval = 1
 ; prefix symbol is shown before the text
-format-prefix = " "
+format-prefix = "   "
 ;label =  %token:27:27%
 format = <label>
-exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
+exec = ~/.config/polybar/scripts/spotify_status.sh
+click-left = ~/.config/rofi/applets/applets/mpd.sh
 
-[module/spotify-prev]
-type = custom/script
-format-font = 3
-exec = echo ""
-format = <label>
-click-left = playerctl previous spotify
-
-[module/spotify-play-pause]
-type = custom/ipc
-hook-0 = echo ""
-hook-1 = echo " "
-initial = 1
-click-left = playerctl play-pause spotify
-
-[module/spotify-next]
-type = custom/script
-format-font = 3
-exec = echo ""
-format = <label>
-click-left = playerctl next spotify
+;[module/spotify-prev]
+;type = custom/script
+;format-font = 3
+;exec = echo ""
+;format = <label>
+;click-left = playerctl previous spotify
+;
+;[module/spotify-play-pause]
+;type = custom/ipc
+;hook-0 = echo ""
+;hook-1 = echo " "
+;initial = 1
+;click-left = playerctl play-pause spotify
+;
+;[module/spotify-next]
+;type = custom/script
+;format-font = 3
+;exec = echo ""
+;format = <label>
+;click-left = playerctl next spotify
 
 
 [settings]

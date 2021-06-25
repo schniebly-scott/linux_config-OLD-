@@ -28,15 +28,14 @@ font pango:monospace 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id ~/.scripts/timed/hourly.sh
 exec --no-startup-id xbindkeys
 exec --no-startup-id pulseaudio
 exec --no-startup-id picom
-exec --no-startup-id polybar main &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id pnmixer
 exec --no-startup-id blueman-applet
@@ -55,6 +54,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty
+
+# open web browser
+bindsym $mod+b exec google-chrome-stable
 
 # kill focused window
 bindsym $mod+q kill
@@ -122,9 +124,9 @@ bindsym $mod+s focus mode_toggle
 set $ws1 "main"
 set $ws2 "term"
 set $ws3 "temp"
-set $ws4 "spotify"
-set $ws5 "extra"
-#set $ws6 "6"
+set $ws4 "discord"
+set $ws5 "spotify"
+set $ws6 "extra"
 #set $ws7 "7"
 #set $ws8 "8"
 #set $ws9 "9"

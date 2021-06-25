@@ -39,3 +39,4 @@ source ~/.resources/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=cyan"
+export PATH=$HOME/.config/rofi/bin:$PATH
