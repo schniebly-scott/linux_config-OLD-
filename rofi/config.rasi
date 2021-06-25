@@ -3,4 +3,7 @@
 configuration {
   show-icons:         true;
   icon-theme:         "Papirus";
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
 }
+
