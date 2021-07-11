@@ -46,4 +46,7 @@ i3 (gaps)
 xsslock
 i3lock-fancy
 https://github.com/adi1090x/rofi
-
+octopi
+libvncserver
+powerkit
+eog
