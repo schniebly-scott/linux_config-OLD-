@@ -5,5 +5,6 @@ configuration {
   icon-theme:         "Papirus";
   me-select-entry: "";
   me-accept-entry: "MousePrimary";
+  terminal: "kitty";  
 }
-
+@import "combi_config"

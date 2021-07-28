@@ -22,7 +22,7 @@ configuration {
     fullscreen: 					false;
     fake-transparency: 				false;
     scroll-method: 					0;
-    window-format: 					"[{w}] ··· {c} ···   {t}";
+    window-format: 					"[{w}] | {c} |  {t}";
     click-to-exit: 					true;
     show-match: 					false;
     combi-hide-mode-prefix: 		false;
@@ -31,7 +31,7 @@ configuration {
     display-run: 					"";
     display-ssh: 					"";
     display-drun: 					"";
-    display-combi: 					"";
+    display-combi: 					"";
 }
 
 @import "styles/colors.rasi"
@@ -45,7 +45,7 @@ window {
     border-color: 					@ac;
     border-radius: 					6px;
     padding: 						15;
-    width: 							20%;
+    width: 							38%;
 }
 
 prompt {
@@ -142,9 +142,9 @@ sidebar {
 }
 
 button {
-    background-color:             	@fg;
-    margin: 						5px;
-    padding: 						5px;
+    background-color:             	@bg;
+    margin: 						0px;
+    padding: 						0px;
     text-color: 					@bg;
     border: 						0px;
     border-radius: 					4px;
@@ -152,11 +152,11 @@ button {
 }
 
 button selected {
-    background-color:             	@ac;
-    text-color: 					@fg;
+    background-color:             	@bg;
+    text-color: 					@bg;
     border: 						0px;
     border-radius: 					4px;
-    border-color: 					@fg;
+    border-color: 					@bg;
 }
 
 scrollbar {

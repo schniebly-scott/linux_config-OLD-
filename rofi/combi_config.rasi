@@ -1,0 +1,3 @@
+configuration {
+  combi-modi: "[D]:~/.config/rofi/i3_workspace_switch.sh,window";
+}

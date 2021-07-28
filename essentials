@@ -4,6 +4,7 @@ Packages I've Downloaded
 * = not from package manager
 
 #################################
+man
 kitty
 polybar
 pnmixer
@@ -50,3 +51,5 @@ octopi
 libvncserver
 powerkit
 eog
+xfce4-power-manager
+gnome-image-viewer
