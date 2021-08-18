@@ -70,6 +70,9 @@ bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/ribbon/launcher
 # start window/desktop switcher
 bindsym $mod+y exec --no-startup-id ~/.config/rofi/launchers/text/launcher.sh
 
+# take a screenshot
+bindsym $mod+c exec --no-startup-id escrotum '~/pics/screenshots/%Y-%m-%d-%H%M%S_$wx$h_escrotum.png'
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
