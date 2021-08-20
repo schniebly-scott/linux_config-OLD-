@@ -1,0 +1,10 @@
+/** Basic config file **/
+
+configuration {
+  show-icons:         true;
+  icon-theme:         "Papirus";
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
+  terminal: "kitty";  
+}
+@import "combi_config"

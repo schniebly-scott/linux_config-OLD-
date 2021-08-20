@@ -153,9 +153,9 @@ root.buttons(gears.table.join(
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
-    awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
+    awful.key({ modkey,           }, "[",   awful.tag.viewprev,
               {description = "view previous", group = "tag"}),
-    awful.key({ modkey,           }, "Right",  awful.tag.viewnext,
+    awful.key({ modkey,           }, "]",  awful.tag.viewnext,
               {description = "view next", group = "tag"}),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore,
               {description = "go back", group = "tag"}),
@@ -489,15 +489,23 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --Gaps
 beautiful.useless_gap = 5
 
+--Fix for polybar
+--
+awful.wibar {
+      position = 'top',
+      height   = 30,
+  }
+  
 --AutoStart
 --
-awful.spawn.with_shell("pkill stalonetray")
+awful.spawn.with_shell("~/.scripts/timed/hourly.sh")
 awful.spawn.with_shell("pkill pnmixer")
 awful.spawn.with_shell("xbindkeys")
+--awful.spawn.with_shell("stalonetray")
+awful.spawn.with_shell("pulseaudio")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("/home/scott/.config/polybar/launch.sh")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("pnmixer")
 awful.spawn.with_shell("blueman-applet")
-awful.spawn.with_shell("stalonetray")
 awful.spawn.with_shell("nitrogen --restore")

@@ -11,7 +11,10 @@
 !/awesome/
 !README.md
 !essentials
-!stalonetrayrc
+!picom.conf
+!asoundrc
+!/i3/
+!/rofi/
 
 #polybar zscroll fix
 /polybar/zscroll/

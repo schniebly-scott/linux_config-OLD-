@@ -49,13 +49,13 @@
 "~/.scripts/brightscripts/downbright.sh"
   XF86MonBrightnessDown
 
-"amixer set Master 3%+"
+"amixer -c 1 set Master 3%+"
   XF86AudioRaiseVolume
 
-"amixer set Master 3%-"
+"amixer -c 1 set Master 3%-"
   XF86AudioLowerVolume
 
-"amixer set Master 0%"
+"amixer -c 1 set Master 0%"
   XF86AudioMute
 
 
