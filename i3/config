@@ -11,7 +11,7 @@
 
 #gaps
 gaps top 28
-gaps inner 8
+#gaps inner 8
 
 set $mod Mod4
 
@@ -33,7 +33,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id xbindkeys
-exec --no-startup-id pulseaudio
+exec --no-startup-id pulseaudio -D
 exec --no-startup-id picom
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
@@ -59,7 +59,7 @@ bindsym $mod+Return exec kitty
 # open web browser
 bindsym $mod+b exec ~/.scripts/inits/vivaldi-opener.sh
 #quick commands
-bindsym $mod+e exec bash -c "$(rofi -dmenu -p 'exec: ' -yoffset 28 -theme /usr/share/rofi/themes/dmenu.rasi)"
+bindsym $mod+Shift+e exec bash -c "$(rofi -dmenu -p 'exec: ' -yoffset 28 -theme /usr/share/rofi/themes/dmenu.rasi)"
 
 # kill focused window
 bindsym $mod+q kill
@@ -107,7 +107,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 #bindsym $mod+Shift+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+Shift+e layout toggle split
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+s floating toggle
@@ -120,6 +120,9 @@ bindsym $mod+s floating toggle
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# default layout
+workspace_layout tabbed
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -212,7 +215,7 @@ bindsym $mod+r mode "resize"
 #
 # ##############################
 
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 2
 title_align center
 for_window [class=".*"] title_format "<span font_desc='MesloLGLDZ Nerd Font Mono 9.5'>%title</span>"
 
@@ -220,9 +223,9 @@ set $purple #5A5269
 set $offpurple #5E5869
 set $offblack #122B33
 set $border #122B33
-client.focused              #423C4D $purple #d8d8d8 $purple $purple
-client.focused_inactive     $border $offpurple $offblack $offpurple $offpurple
-client.unfocused            $border $offpurple $offblack $offpurple $offpurple
-client.urgent               $border $offpurple $offblack $offpurple $offpurple
-client.placeholder          $border $offpurple $offblack $offpurple $offpurple
+client.focused              $border $purple #d8d8d8 $purple $purple
+client.focused_inactive     $border $offpurple $offblack $offpurple $border
+client.unfocused            $border $offpurple $offblack $offpurple $border
+client.urgent               $border $offpurple $offblack $offpurple $border
+client.placeholder          $border $offpurple $offblack $offpurple $border
 

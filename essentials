@@ -4,6 +4,8 @@ Packages I've Downloaded
 * = not from package manager
 
 #################################
+xorg-server
+xorg-xinit
 man
 kitty
 polybar
