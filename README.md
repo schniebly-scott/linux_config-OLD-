@@ -9,6 +9,7 @@ This file will show how to manually install the dependencies required for my con
 * [GTK Theme](#gtk-theme)
 * [Zsh/P10k](#zsh-and-p10k)
 
+https://github.com/adi1090x/rofi
 
 ## Folders
 Create folders in your `$HOME` named:
